@@ -7,6 +7,8 @@ tasks:
       setup-envtest use 1.19.x!
       go mod download
       go build
+  - name: Setup kubectl context from our envvar
+    command: echo $K8S_CTX | base64 -d > ~/.kube/config
 jetbrains:
   goland:
     vmoptions: "-Xmx4g"
