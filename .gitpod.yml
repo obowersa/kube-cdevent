@@ -8,7 +8,7 @@ tasks:
       go mod download
       go build
   - name: Setup kubectl context from our envvar
-    command: echo $K8S_CTX | base64 -d > ~/.kube/config
+    command: echo $KUBE_CTX | base64 -d > ~/.kube/config
 jetbrains:
   goland:
     vmoptions: "-Xmx4g"
