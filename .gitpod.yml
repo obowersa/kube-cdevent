@@ -1,5 +1,10 @@
+image:
+  file: .gitpod.Dockerfile
+
 tasks:
   - init: |
+      go install sigs.k8s.io/controller-runtime/tools/setup-envtest@latest
+      setup-envtest use 1.19.x!
       go get 
       go build
 jetbrains:
