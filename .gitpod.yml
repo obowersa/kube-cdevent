@@ -17,3 +17,4 @@ jetbrains:
     plugins:
       - com.codestream.jetbrains-codestream
       - com.vermouthx.idea
+      - com.intellij.kubernetes
