@@ -1,0 +1,12 @@
+tasks:
+  - init: |
+      go get 
+      go build
+jetbrains:
+  goland:
+    vmoptions: "-Xmx4g"
+    prebuilds:
+      version: stable
+    plugins:
+      - com.codestream.jetbrains-codestream
+      - com.vermouthx.idea

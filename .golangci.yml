@@ -1,0 +1,54 @@
+---
+linters:
+  enable:
+    - deadcode
+    - govet
+    - ineffassign
+    - staticcheck
+    - structcheck
+    - typecheck
+    - unused
+    - varcheck
+    - bodyclose
+    - depguard
+    - dupl
+    - goconst
+    - gofmt
+    - goimports
+    - gosec
+    - misspell
+    - nakedret
+    - exportloopref
+    - unconvert
+    - dogsled
+    - gofmt
+    - ifshort
+    - errorlint
+    - nolintlint
+    - predeclared
+    - revive
+    - unparam
+    - wrapcheck
+linters-settings:
+  goconst:
+    min-len: 2
+    min-occurrences: 2
+  gocritic:
+    disabled-checks:
+      - dupImport
+    enabled-tags:
+      - diagnostic
+      - experimental
+      - opinionated
+      - performance
+      - style
+  gocyclo:
+    min-complexity: 10
+  govet:
+    check-shadowing: true
+  maligned:
+    suggest-new: true
+output:
+  sort-results: true
+run:
+  concurrency: 4
