@@ -15,6 +15,4 @@ RUN set -x; cd "$(mktemp -d)" && \
     tar zxvf "${KREW}.tar.gz" && \
     ./"${KREW}" install krew && \
     echo 'export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"' >> /home/gitpod/.bashrc  && \
-    source /home/gitpod.bashrc && \
-    kubectl krew install ctx && \
-    kubectl krew install ns
+    source /home/gitpod.bashrc
